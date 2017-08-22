@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pizza_pricer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.odabbs.cs4322lab2.PizzaPricerActivity">
+
+    <TextView
+        android:text="@string/Crust_select"
+        android:textColor="@color/colorAccent"
+        android:textSize="32sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/crustHeader"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="19dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="14dp" />
+
+    <TextView
+        android:text="@string/Toppings_select"
+        android:textColor="@color/colorAccent"
+        android:textSize="32sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toppingHeader"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="61dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="61dp" />
+
+    <CheckBox
+        android:text="@string/Anchovies_choice"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/anchoviesCheckBox"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintRight_toRightOf="@+id/toppingHeader"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/toppingHeader"
+        android:layout_marginRight="10dp" />
+
+    <CheckBox
+        android:text="@string/Garlic_choice"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/garlicCheckBox"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/anchoviesCheckBox"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/anchoviesCheckBox" />
+
+    <CheckBox
+        android:text="@string/Meatballs_choice"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/meatballCheckBox"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/garlicCheckBox"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/garlicCheckBox" />
+
+    <CheckBox
+        android:text="@string/Pineapple_choice"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pineappleCheckBox"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/meatballCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/meatballCheckBox"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/meatballCheckBox" />
+
+    <TextView
+        android:text="@string/Delivery_select"
+        android:textColor="@color/colorAccent"
+        android:textSize="32sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deliveryHeader"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/pineappleCheckBox"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <RadioGroup
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/crustHeader"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp">
+        <RadioButton
+            android:text="@string/Crispy_choice"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="74dp"
+            tools:layout_editor_absoluteX="16dp"
+            android:id="@+id/crispyRadioButton" />
+
+        <RadioButton
+            android:text="@string/Thick_choice"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="124dp"
+            tools:layout_editor_absoluteX="16dp"
+            android:id="@+id/thickRadioButton" />
+
+        <RadioButton
+            android:text="@string/Soggy_choice"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="174dp"
+            tools:layout_editor_absoluteX="16dp"
+            android:id="@+id/soggyRadioButton" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/deliveryHeader"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp">
+
+        <RadioButton
+            android:text="@string/DineIn_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteY="273dp"
+            tools:layout_editor_absoluteX="16dp"
+            android:id="@+id/dineInRadioButton"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="@string/CarryOut_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteY="323dp"
+            tools:layout_editor_absoluteX="16dp"
+            android:id="@+id/carryOutRadioButton"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="@string/Delivery_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteY="373dp"
+            tools:layout_editor_absoluteX="16dp"
+            android:id="@+id/deliveryRadioButton"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <TextView
+        android:text="@string/Size_select"
+        android:textColor="@color/colorAccent"
+        android:textSize="32sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sizeHeader"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/priceTextView"
+        android:layout_marginStart="30dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="47dp"
+        app:layout_constraintLeft_toRightOf="@+id/radioGroup"
+        android:layout_marginLeft="30dp" />
+
+    <SeekBar
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:id="@+id/sizeSeekBar"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="66dp"
+        app:layout_constraintBottom_toBottomOf="@+id/priceTextView"
+        android:layout_marginEnd="66dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="42dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sizeHeader"
+        android:layout_marginLeft="66dp"
+        android:layout_marginRight="66dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sizeText"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="8dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/sizeSeekBar"
+        app:layout_constraintLeft_toRightOf="@+id/sizeSeekBar"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:text="@string/Price_text"
+        android:textColor="@color/colorAccent"
+        android:textSize="32sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/priceTextView"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CS4322Lab2</string>
+    <string name="Crust_select">Crust</string>
+    <string name="Toppings_select">Toppings</string>
+    <string name="Delivery_select">Dine in or Carry Out</string>
+    <string name="Size_select">Size</string>
+    <string name="Crispy_choice">Crispy</string>
+    <string name="Thick_choice">Thick</string>
+    <string name="Soggy_choice">Soggy</string>
+    <string name="Anchovies_choice">Anchovies</string>
+    <string name="Pineapple_choice">Pineapple</string>
+    <string name="Garlic_choice">Garlic</string>
+    <string name="Meatballs_choice">Meatballs</string>
+    <string name="DineIn_choice">Dine In</string>
+    <string name="CarryOut_choice">Carry Out</string>
+    <string name="Delivery_choice">Delivery</string>
+    <string name="Price_text">$24.74</string>
+</resources>
